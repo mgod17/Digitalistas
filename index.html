@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --Gris-oscuro: #e5e2e7;
+            --Gris-claro: #f0ebf2
+            --celeste-logo: #5f77fa;
+            --azul-logo: #555aeb;
+            --negro: #060112;
+            --rojo: #e24458;
+        }
+        @font-face {
+            font-family: "Gobold";
+            src: url(./Fuentes/Gobold\ Bold.otf);
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            padding-top: 80px;
+            font-family: "Gobold";
+            text-transform: uppercase;
+            background-color: var(--Gris-claro);
+        }
+
+        header {
+            background-color: var(--Gris-oscuro);
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+        .header-nav {
+            display: flex;
+            justify-content: space-between ;
+
+            height: 80px;
+        }
+        .nav-menu {
+            display: flex;
+            justify-items: flex-end;
+            align-items: center;
+            padding-right: 40px ;
+        }
+        .logo {
+           height: 80px;
+           padding: 5px 20px;
+        }
+        .nav-menu-item {
+            font-size: 18px;
+            text-decoration: none;
+            list-style: none;
+            margin: 0 10px;
+        }
+        .nav-link {
+            text-decoration: none;
+            color: var(--negro);
+        }
+        .nav-link:hover {
+            color: var(--rojo);
+            font-size: 26px;
+            transition: 0.3s;
+        }
+        main .fundacion {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 520px; 
+        }
+        main section  div .img-digitalistas {
+            width: 243px;
+            height: 400.5px;
+        }
+        .fundacion-info {
+            display: flex;
+            flex-direction: column;
+
+        }
+        .fundacion-info h1 {
+            font-size: 120px;
+        }
+        .fundacion-info p {
+            font-size: 40px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="header-nav">
+            <a href=""><img src="./Gráfica/LOGO/1x/Isotipo color x1.png" alt="" class="logo"></a>
+            <ul class="nav-menu">
+                <li class="nav-menu-item"><a class="nav-link" href="">Institucional</a></li>
+                <li class="nav-menu-item"><a href="" class="nav-link">Proyectos</a></li>
+                <li class="nav-menu-item"><a href="" class="nav-link">Blog</a></li>
+                <li class="nav-menu-item"><a href="" class="nav-link"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="fundacion">
+            <div>
+                <img src="./Gráfica/LOGO/1x/Isotipo color x1.png" alt="" class="img-digitalistas">
+            </div>
+            <div class="fundacion-info">
+                 <h1>digitalistas</h1>
+                 <p>Fundacion latinoamericana para el</p>
+                 <p>desarrollo de pedagogias digitales</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
