@@ -18,6 +18,10 @@
             font-family: "Gobold";
             src: url(./Fuentes/Gobold\ Bold.otf);
         }
+        @font-face {
+            font-family: "Coolvetica";
+            src: url(./Fuentes/coolvetica/coolvetica\ rg.otf);
+        }
         * {
             margin: 0;
             padding: 0;
@@ -26,11 +30,11 @@
         body {
             padding-top: 80px;
             font-family: "Gobold";
-            text-transform: uppercase;
             background-color: var(--Gris-claro);
         }
 
         header {
+            text-transform: uppercase;
             background-color: var(--Gris-oscuro);
             width: 100%;
             position: fixed;
@@ -54,6 +58,7 @@
            padding: 5px 20px;
         }
         .nav-menu-item {
+            text-transform: uppercase;
             font-size: 18px;
             text-decoration: none;
             list-style: none;
@@ -72,11 +77,14 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            height: 520px; 
+            height: 500px;
+            width: 100%;
+            background-color: var(--Gris-claro);
         }
         main section  div .img-digitalistas {
             width: 243px;
             height: 400.5px;
+            padding: 20px;
         }
         .fundacion-info {
             display: flex;
@@ -89,7 +97,9 @@
         .fundacion-info p {
             font-size: 40px;
         }
-
+        .article-mito {
+            font-family: "coolvetica";
+        }
     </style>
 </head>
 <body>
@@ -100,7 +110,7 @@
                 <li class="nav-menu-item"><a class="nav-link" href="">Institucional</a></li>
                 <li class="nav-menu-item"><a href="" class="nav-link">Proyectos</a></li>
                 <li class="nav-menu-item"><a href="" class="nav-link">Blog</a></li>
-                <li class="nav-menu-item"><a href="" class="nav-link"></a></li>
+                <li class="nav-menu-item"><a href="" class="nav-link">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -114,6 +124,16 @@
                  <p>Fundacion latinoamericana para el</p>
                  <p>desarrollo de pedagogias digitales</p>
             </div>
+        </section>
+        <section class="container-mito">
+            <div>
+                <img src="" alt="">
+            </div>
+            <article class="article-mito">
+                <h2>El mito que nos inspira</h2>
+                <p>Prometeo roba el fuego de los dioses para la humanidad que sufría de hambre y frío. Así fue que con el dominio del fuego nacen las primeras tecnologías. Aristóteles describe el arte (techné) como la acción humana que produce una realidad que antes no existía. Artistas son tanto el zapatero o el escultor, como el programador de software…</p>
+                <p>Inspirándose en la osadía de Prometeo, Digitalistas se aventura a soñar con distribuir  a toda la humanidad  el fuego de los dioses (techné)</p>
+            </article>
         </section>
     </main>
 </body>
